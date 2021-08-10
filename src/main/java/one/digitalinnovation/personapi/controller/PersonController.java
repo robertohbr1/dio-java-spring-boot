@@ -25,12 +25,13 @@ import java.util.List;
 @RequestMapping("/api/v1/people")
 @AllArgsConstructor(onConstructor = @__(@Autowired))
 public class PersonController {
-
+/*
     @GetMapping
     public String getBook(){
         return "Teste";
     }
- /*   private PersonService personService;
+ */
+    private PersonService personService;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
@@ -59,5 +60,4 @@ public class PersonController {
         personService.delete(id);
     }
 
-  */
 }
